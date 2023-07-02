@@ -15,6 +15,7 @@ def stockpicker (prices)
     end
     puts "Buy:  #{buy_day} -- Sell:#{sell_day}"
     puts "#{prices[sell_day]} - #{prices[buy_day]} = #{prices[sell_day]-prices[buy_day]}"
-end
 
+    return [buy_day, sell_day]
+end
 stockpicker([17,3,6,9,15,8,6,1,10])
